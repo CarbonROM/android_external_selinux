@@ -102,6 +102,12 @@ cc_library_shared {
             version_script: "exported_vendor.map",
         },
     },
+
+    product_variables: {
+        treble: {
+            cflags: ["-DFULL_TREBLE"],
+        },
+    },
 }
 
 cc_library {
