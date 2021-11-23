@@ -47,6 +47,7 @@ common_CFLAGS = [
 cc_library {
     name: "libsepol",
     host_supported: true,
+    product_specific: true,
     cflags: common_CFLAGS,
     srcs: [
         "src/assertion.c",
